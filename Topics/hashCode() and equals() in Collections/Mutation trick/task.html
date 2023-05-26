@@ -1,0 +1,10 @@
+<h2>Mutation trick</h2>
+<p></p>
+<p>Enter the size of the HashSet for the case where both <code class="language-java">hashCode()</code> and <code class="language-java">equals()</code> are not overridden.</p>
+<pre><code class="language-java">    Person james = new Person("James Gosling");
+        
+    Set&lt;Person&gt; set = new HashSet();
+    set.add(james);
+    set.add(new Person("James Gosling"));
+
+    System.out.println(set.size());</code></pre>
